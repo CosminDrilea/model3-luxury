@@ -97,10 +97,19 @@ document.getElementById("lightbox-img");
 
 const closeBtn =
 document.querySelector(".close");
+const prevBtn =
+document.querySelector(".prev");
 
-galleryImages.forEach(img => {
+const nextBtn =
+document.querySelector(".next");
+
+let currentIndex = 0;
+
+galleryImages.forEach((img,index) => {
 
 img.addEventListener("click", () => {
+
+currentIndex = index;
 
 lightbox.style.display = "flex";
 
@@ -123,6 +132,36 @@ if(e.target === lightbox){
 lightbox.style.display = "none";
 
 }
+
+});
+prevBtn.addEventListener("click", () => {
+
+currentIndex--;
+
+if(currentIndex < 0){
+
+currentIndex =
+galleryImages.length - 1;
+
+}
+
+lightboxImg.src =
+galleryImages[currentIndex].src;
+
+});
+
+nextBtn.addEventListener("click", () => {
+
+currentIndex++;
+
+if(currentIndex >= galleryImages.length){
+
+currentIndex = 0;
+
+}
+
+lightboxImg.src =
+galleryImages[currentIndex].src;
 
 });
 /* =========================
