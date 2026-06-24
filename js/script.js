@@ -1,1 +1,83 @@
+/* =========================
+COUNTDOWN LUXURY
+========================= */
 
+const target = new Date(“2026-09-05T18:00:00”).getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+
+const diff = target - now;
+
+if(diff <= 0){
+
+document.getElementById("days").innerHTML = "0";
+document.getElementById("hours").innerHTML = "0";
+document.getElementById("minutes").innerHTML = "0";
+document.getElementById("seconds").innerHTML = "0";
+return;
+
+}
+
+const days = Math.floor(diff / 86400000);
+
+const hours = Math.floor(
+(diff % 86400000) / 3600000
+);
+
+const minutes = Math.floor(
+(diff % 3600000) / 60000
+);
+
+const seconds = Math.floor(
+(diff % 60000) / 1000
+);
+
+document.getElementById(“days”).innerHTML = days;
+document.getElementById(“hours”).innerHTML = hours;
+document.getElementById(“minutes”).innerHTML = minutes;
+document.getElementById(“seconds”).innerHTML = seconds;
+
+},1000);
+
+/* =========================
+FADE ON SCROLL
+========================= */
+
+const fades = document.querySelectorAll(”.fade”);
+
+function showElements(){
+
+fades.forEach(el => {
+
+const top = el.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+  el.classList.add("show");
+}
+
+});
+
+}
+
+window.addEventListener(“scroll”,showElements);
+
+showElements();
+
+/* =========================
+RSVP DEMO
+========================= */
+
+const form = document.getElementById(“rsvpForm”);
+
+if(form){
+
+form.addEventListener(“submit”,function(e){
+
+e.preventDefault();
+alert("Confirmarea a fost trimisă cu succes!");
+form.reset();
+
+});
+
+}
