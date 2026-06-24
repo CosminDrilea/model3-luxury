@@ -419,5 +419,22 @@ opacity:1;
 transform:translateY(0);
 
 }
+  textarea{
+width:100%;
+
+padding:15px;
+
+margin-bottom:15px;
+
+background:#1a1a1a;
+
+border:1px solid #d4af37;
+
+color:white;
+
+box-sizing:border-box;
+
+resize:vertical;
+}
 
 }
