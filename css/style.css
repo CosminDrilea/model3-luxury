@@ -422,6 +422,8 @@ transform:translateY(0);
 textarea{
 width:100%;
 
+display:block;
+
 padding:15px;
 
 margin-bottom:20px;
