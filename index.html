@@ -125,14 +125,66 @@ Deschide în Google Maps
 <section id="rsvp" class="section fade">
 <h2>Confirmare prezență</h2>
 <form id="rsvpForm">
-<select required>
+
+<input
+id="nume"
+type="text"
+placeholder="Nume și prenume"
+required>
+
+<select id="participare" required>
 <option value="">Participare</option>
-<option>Particip</option>
-<option>Nu particip</option>
+<option value="Particip">Particip</option>
+<option value="Nu particip">Nu particip</option>
 </select>
+
+<select id="persoane">
+<option value="0">Număr persoane</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+
+<select id="meniu_normal">
+<option value="0">Meniu normal</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+
+<select id="meniu_copii">
+<option value="0">Meniu copii</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+
+<select id="meniu_vegan">
+<option value="0">Meniu vegetarian</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+
+<div id="eroare"
+style="
+display:none;
+color:#c0392b;
+font-weight:600;
+margin-bottom:15px;">
+</div>
+
 <button type="submit">
 Trimite confirmarea
 </button>
+
 </form>
 </section>
 <footer>
