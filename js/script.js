@@ -184,3 +184,32 @@ navbar.classList.remove("scrolled");
 }
 
 });
+/* =========================
+   RSVP SMART
+========================= */
+
+const participare =
+document.getElementById("participare");
+
+const campuri =
+document.getElementById("campuriParticipare");
+
+if(participare){
+
+campuri.style.display = "none";
+
+participare.addEventListener("change", () => {
+
+if(participare.value === "Da"){
+
+campuri.style.display = "block";
+
+}else{
+
+campuri.style.display = "none";
+
+}
+
+});
+
+}
