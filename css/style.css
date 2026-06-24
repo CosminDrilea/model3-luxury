@@ -407,19 +407,17 @@ right:20px;
 @keyframes fadeHero{
 
 from{
-
 opacity:0;
 transform:translateY(40px);
-
 }
 
 to{
-
 opacity:1;
 transform:translateY(0);
+}
 
 }
-}
+
 textarea{
 width:100%;
 
