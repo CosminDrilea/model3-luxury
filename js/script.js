@@ -2,7 +2,7 @@
 COUNTDOWN LUXURY
 ========================= */
 
-const target = new Date(“2026-09-05T18:00:00”).getTime();
+const target = new Date("2026-09-05T18:00:00").getTime();
 
 setInterval(() => {
 
@@ -34,10 +34,10 @@ const seconds = Math.floor(
 (diff % 60000) / 1000
 );
 
-document.getElementById(“days”).innerHTML = days;
-document.getElementById(“hours”).innerHTML = hours;
-document.getElementById(“minutes”).innerHTML = minutes;
-document.getElementById(“seconds”).innerHTML = seconds;
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
 
 },1000);
 
@@ -45,7 +45,7 @@ document.getElementById(“seconds”).innerHTML = seconds;
 FADE ON SCROLL
 ========================= */
 
-const fades = document.querySelectorAll(”.fade”);
+const fades = document.querySelectorAll(".fade");
 
 function showElements(){
 
@@ -60,7 +60,7 @@ if(top < window.innerHeight - 100){
 
 }
 
-window.addEventListener(“scroll”,showElements);
+window.addEventListener("scroll",showElements);
 
 showElements();
 
@@ -68,11 +68,11 @@ showElements();
 RSVP DEMO
 ========================= */
 
-const form = document.getElementById(“rsvpForm”);
+const form = document.getElementById("rsvpForm");
 
 if(form){
 
-form.addEventListener(“submit”,function(e){
+form.addEventListener("submit",function(e){
 
 e.preventDefault();
 alert("Confirmarea a fost trimisă cu succes!");
