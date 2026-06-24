@@ -43,13 +43,15 @@ padding:0;
 .navbar a{
 color:white;
 text-decoration:none;
-font-size:16px;
+font-size:14px;
 letter-spacing:1px;
 transition:.3s;
+opacity:.8;
 }
 
 .navbar a:hover{
 color:#d4af37;
+opacity:1;
 }
 
 .hero{
