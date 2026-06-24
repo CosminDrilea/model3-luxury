@@ -134,55 +134,31 @@ required>
 
 <select id="participare" required>
 <option value="">Participare</option>
-<option value="Particip">Particip</option>
-<option value="Nu particip">Nu particip</option>
+<option value="Da">Vom participa cu drag</option>
+<option value="Nu">Din păcate nu putem participa</option>
 </select>
 
 <select id="persoane">
-<option value="0">Număr persoane</option>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
+<option value="">Număr persoane</option>
+<option value="1">1 persoană</option>
+<option value="2">2 persoane</option>
+<option value="3">3 persoane</option>
+<option value="4">4 persoane</option>
+<option value="5">5 persoane</option>
 </select>
 
-<select id="meniu_normal">
-<option value="0">Meniu normal</option>
-<option value="0">0</option>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-</select>
+<textarea
+id="preferinte"
+placeholder="Preferințe alimentare sau alergii (opțional)"
+rows="4"></textarea>
 
-<select id="meniu_copii">
-<option value="0">Meniu copii</option>
-<option value="0">0</option>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-</select>
-
-<select id="meniu_vegan">
-<option value="0">Meniu vegetarian</option>
-<option value="0">0</option>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-</select>
-
-<div id="eroare"
-style="
-display:none;
-color:#c0392b;
-font-weight:600;
-margin-bottom:15px;">
-</div>
+<textarea
+id="mesaj"
+placeholder="Mesaj pentru miri (opțional)"
+rows="5"></textarea>
 
 <button type="submit">
-Trimite confirmarea
+Confirmă prezența
 </button>
 
 </form>
