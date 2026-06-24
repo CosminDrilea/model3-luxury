@@ -419,6 +419,7 @@ opacity:1;
 transform:translateY(0);
 
 }
+}
 textarea{
 width:100%;
 
@@ -443,5 +444,4 @@ box-sizing:border-box;
 resize:vertical;
 
 border-radius:8px;
-}
 }
